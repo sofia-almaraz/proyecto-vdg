@@ -1,33 +1,36 @@
-<?php  ?>
+<?php
+  include_once('funciones.php');
+
+  if($_POST) {
+    
+
+      // 1 - buscar usuario por mail
+      $usuario = buscamePorEmail($_POST['email']);
+      if($usuario !== null) {
+          if(password_verify($_POST['password'], $usuario['password']) === true) {
+              login($usuario);
+          }
+      }
+      // SI mi controlador de login devuelve true, es porque el usuario ingresa con una cookie o con una
+      // session ya iniciada en el sistema, no quiero que vea el form de login
+
+  }
+  if(loginController()) {
+      header('Location: foro.php');
+      // Lo derivo a su perfil y corto la ejecucion de codigo.
+      exit;
+  }
+?>
 
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/login.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scarable=no, initial-scale=1.0,maximum-scale=1.0, minumun-scale=1.0">
-    <title></title>
-  </head>
+
+<?php include_once('head.php');?>
 
 <body style="background-image:url(img/img6.jpg);background-size: 49%;">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 55px; color:white">
-    <a class="navbar-brand" href="index.php" style=color:white>Inicio</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
 
-            <a><li class="nav-item"><a class="nav-link" href="login1.php"  style=color:white>iniciar sesion</a></li>
-          <a>  <li class="nav-item"><a class="nav-link" href="registrate.php" style=color:white>Registrarse</a></li>
-        <a><li class="nav-item"><a class="nav-link" href="foro.php" style=color:white>Foro</a></li>
-
-            <li class="nav-item"><a class="nav-link" href="p-frec.php" style=color:white>Preguntas frecuentes</a></li>
-
-        </ul>
-    </div>
-</nav>
+  <?php include_once('navbar.php') ?>
 
 
   <div class="container">
@@ -36,15 +39,18 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Iniciar Sesion</h5>
-            <form class="form-signin">
+
+            <form  action="" class="form-signin" method="post">
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="email" required autofocus>
                 <label for="inputEmail">email</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="email" name="email" required autofocus>
+
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="contraseña" required>
                 <label for="contraseña">contraseña</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="contraseña" name="password" required>
+
               </div>
 
               <div class="custom-control custom-checkbox mb-3">

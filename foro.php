@@ -28,13 +28,20 @@ include_once('funciones.php');
         <li>Un juzgado. El juez debe escuchar tu denuncia sin la presencia de tu agresor.</li>
       </ul>
 
-  ""
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+              <div class="card-body">
 <form class="container-fluid">
   <h5>Contanos tu historia</h5>
+
   <textarea name="mensaje" placeholder="Dejanos tu mensaje."></textarea>
-  <button type="button" id="button">Enviar</button>
+  <button type="button" class="btn btn-primary" id="button">Enviar</button>
 </form>
-<a href="p-principal.html" class="btn btn-primary">Volver a inicio</a>
+</div>
+</div>
+</div>
 <footer style="padding-top: 1rem;
     padding-bottom: 1rem;
      background-color:#620085!important;
