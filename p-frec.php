@@ -1,29 +1,13 @@
-<?php  ?>
+<?php
+include_once('funciones.php');
+ ?>
 
 <!DOCTYPE html>
+<?php include_once('head.php');?>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel ="stylesheet" href="css/styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scarable=no, initial-scale=1.0,maximum-scale=1.0, minumun-scale=1.0">
-    <title></title>
-  </head>
+
   <body style="background-image:url(img/img6.jpg);">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 55px;">
-      <a class="navbar-brand" href="index.php" style=color:white>Inicio</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-
-              <li class="nav-item"><a class="nav-link" href="login1.php" style=color:white>iniciar sesion</a></li>
-              <li class="nav-item"><a class="nav-link" href="register.php" style=color:white>Registrarse</a></li>
-          <li class="nav-item"><a class="nav-link" href="foro.php" style=color:white>Foro</a></li>
-
-              <li class="nav-item"><a class="nav-link" href="p-frec.php" style=color:white>Preguntas frecuentes</a></li>
-
-          </ul>
-      </div>
-  </nav>
+    <?php include_once('navbar.php') ?>
     <h1 style="color:red;">PREGUNTAS FRECUENTES</h1>
       <h3 " class="_298"></h3><li class="_146-"><a
        class="_5dwo" href="/help/188157731232424?helpref=topq" data-testid="top_questions_id">¿Cómo creo una cuenta de antipanico?</a></li><li

@@ -1,7 +1,10 @@
-<?php  ?>
+<?php
+    include_once('funciones.php');
+    ?>
 
 <!DOCTYPE html>
 <html>
+<?php include_once('head.php');?>
   <head>
     <meta name="viewport" content="width=device-width, user-scarable=no, initial-scale=1.0,maximum-scale=1.0, minumun-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
 
-              <li class="nav-item"><a class="nav-link" href="login1.php"style=color:white>Iniciar sesion</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.php"style=color:white>Iniciar sesion</a></li>
               <li class="nav-item"><a class="nav-link" href="register.php"style=color:white>Registrarse</a></li>
           <li class="nav-item"><a class="nav-link" href="foro.php"style=color:white>Foro</a></li>
 
