@@ -11,8 +11,8 @@ include_once('funciones.php');
 
 
   <header class="">
-
-    <h1>Hay violencia contra la mujer si atacan:</h1>
+<h1>BIENVENIDA!</h1>
+    <article>Hay violencia contra la mujer si atacan:</article>
     <p>Si sos mujer y sufris cualquier tipo de violencia o corres peligro de sufrirla, tenes derecho a que te ayuden y te protejan. La violencia puede ser fisica, psicologica, sexual o simbolica.</p>
     <ul>
 

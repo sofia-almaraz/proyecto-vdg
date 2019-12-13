@@ -13,7 +13,7 @@
 
   </head >
 
-  <body style="background-image:url(img/img4.jpg);background-size: 100vw 100vw;  margin: 0; " >
+  <body style="background-image:url(img/img6.jpg);background-size: 49%;">" >
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 55px;">
       <a class="navbar-brand" href="index.php"style=color:white>Inicio</a>

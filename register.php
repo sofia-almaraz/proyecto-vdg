@@ -21,15 +21,15 @@
         }
     }
 
-?>  
+?>
 <!DOCTYPE html>
 <html>
     <?php include_once('head.php'); ?>
-    <body>
+    <body style="background-image:url(img/img6.jpg);background-size: 49%;">
         <div class="container">
-    
+
             <?php include_once('navbar.php'); ?>
-            
+
             <?php if(isset($errores)):?>
             <ul>
             <?php foreach($errores as $error):?>
@@ -40,7 +40,7 @@
 
             <form class="form form-group row col-5 offset-2" style="padding-top: 55px;" action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="nombre">Username: </label>
+                    <label for="nombre">Nombre: </label>
                     <input type="text" name="username" value="<?=!isset($errores['username']) ? old('username') : "" ?>">
                 </div>
                 <div class="form-group">
@@ -48,15 +48,15 @@
                     <input type="text" name="email" value="<?=!isset($errores['email']) ? old('email') : "" ?>">
                 </div>
                 <div class="form-group">
-                     <label for="avatar">Avatar: </label>
+                     <label for="avatar">Archivo: </label>
 					<input type="file" name="avatar">
                 </div>
                 <div class="form-group">
-                    <label for="passwd">Password: </label>
+                    <label for="passwd">Contraseña: </label>
                     <input type="password" name="password">
                 </div>
                 <div class="form-group">
-                    <label for="cpasswd">Repetir Password: </label>
+                    <label for="cpasswd">Repetir Contraseña: </label>
                     <input type="password" name="cpassword">
                 </div>
                 <div class="form-group">

@@ -6,7 +6,7 @@ include_once('funciones.php');
 <?php include_once('head.php');?>
 <html lang="en" dir="ltr">
 
-  <body style="background-image:url(img/img6.jpg);">
+  <body style="background-image:url(img/img6.jpg);background-size: 49%;">
     <?php include_once('navbar.php') ?>
     <h1 style="color:red;">PREGUNTAS FRECUENTES</h1>
       <h3 " class="_298"></h3><li class="_146-"><a
